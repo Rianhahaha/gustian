@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <title>Lab</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="./css/sidebars.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page">
+    <div class="sidebar">
+      <!-- Sidebar -->
+      <div class="p-3" style="width: 280px; height: 1000px; background-color: white;">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi pe-none me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <span class="fs-4">Praktikum IF</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="./Halaman Utama.html" class="nav-link " aria-current="page">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="./Lab.html" class="nav-link ">
+              Lab
+            </a>
+          </li>
+          <li>
+            <a href="./Waktu.html" class="nav-link">
+              Waktu
+            </a>
+          </li>
+          <li>
+            <a href="./Jadwal.html" class="nav-link active">
+              Jadwal
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="#" class="text-center nav-link" data-bs-toggle="modal" data-bs-target="#keluar">
+              Keluar
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Sidebar End -->
+    </div>
+
+    <div class="page-body p-3">
+      <div class="mb-3 card">
+        <div class="card-body">
+          <h5 class="card-title">Ubah Jadwal Praktikum</h5>
+          <hr>
+          <br>
+          <p class="card-text text-center">Buat jadwal praktikum sesuai dengan yang diinginkan</p>
+          <div class="d-flex justify-content-center">
+            <div class="row">
+              <div class="col-8">
+                <div class="mb-3 form-floating">
+                  <input class="form-control" id="floatingInput1" placeholder="Masukkan Username" required="required">
+                  <label for="floatingInput">Nama Praktikum</label>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label">
+                      SI
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label">
+                      IF
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-3 form-floating">
+                  <input class="form-control" id="floatingInput2" placeholder="Masukkan Username" required="required">
+                  <label for="floatingInput">Nama Lab</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-3 form-floating">
+                  <input class="form-control" id="floatingInput3" placeholder="Masukkan Username" required="required">
+                  <label for="floatingInput">Waktu Praktikum</label>
+                </div>
+              </div>
+             <div class="mb-3 d-flex justify-content-end">
+              <div class="p-1">
+                <button type="submit" class="btn btn-outline-danger" > Reset</button>
+              </div>
+              <div class="p-1">
+                <button type="submit" class="btn btn-outline-success"> Submit</button>
+              </div>
+             </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered mo">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Keluar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Yakin ingin keluar?
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+          <a href="./Login.html" type="button" class="btn btn-danger">Keluar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="input-dataLab" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Input Data Lab</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Masukkan Ruangan Lab yang Tersedia</p>
+          <form>
+            <div class="mb-3 form-floating">
+              <input class="form-control" id="floatingInput" placeholder="Masukkan Username" required="required">
+              <label for="floatingInput">Input Nama Lab</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-success w-100">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/sidebars.js"></script>
+  <!-- JS -->
+
+<!-- JS END -->
+</body>
+
+</html>

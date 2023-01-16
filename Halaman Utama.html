@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <title>Halaman Utama</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="./css/sidebars.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="p-5">
+    <h4 class="text-center">Selamat Datang di</h4>
+    <h1 class="text-center">Praktikum Informatika</h1>
+    <hr><br>
+
+    <div class="mb-3 d-flex justify-content-center">
+      <div class="row">
+        <div class="mb-3 col-12 col-md-6">
+          <a href="./Lab.html" class="btn btn-success btn-lg btn-home">
+           
+            LAB</a>
+        </div>
+        <div class="mb-3 col-12 col-md-6">
+          <a href="./Waktu.html" class="btn btn-success btn-lg btn-home">
+          
+            Waktu Praktikum</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3 d-flex justify-content-center">
+      <div class="row">
+        <div class="mb-3 col-12 col-md-6">
+          <a href="./Jadwal.html" class="btn btn-success btn-lg btn-home">
+          
+            Jadwal Praktikum</a>
+        </div>
+        <div class="mb-3 col-12 col-md-6">
+          <button href="#" class="btn btn-success btn-lg btn-home" data-bs-toggle="modal" data-bs-target="#keluar">
+          
+            Keluar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered mo">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Keluar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Yakin ingin keluar?
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+          <a href="./Login.html" type="button" class="btn btn-danger">Keluar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="input-dataLab" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Input Data Lab</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Masukkan Ruangan Lab yang Tersedia</p>
+          <form>
+            <div class="mb-3 form-floating">
+              <input class="form-control" id="floatingInput" placeholder="Masukkan Username" required="required">
+              <label for="floatingInput">Input Nama Lab</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-outline-success w-100">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/sidebars.js"></script>
+</body>
+
+</html>

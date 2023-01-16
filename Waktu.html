@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <title>Menu Waktu</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="./css/sidebars.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page">
+    <div class="sidebar">
+      <!-- Sidebar -->
+      <div class="p-3" style="width: 280px; height: 1000px; background-color: white;">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi pe-none me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <span class="fs-4">Praktikum IF</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="./Halaman Utama.html" class="nav-link " aria-current="page">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="./Lab.html" class="nav-link ">
+              Lab
+            </a>
+          </li>
+          <li>
+            <a href="./Waktu.html" class="nav-link active">
+              Waktu
+            </a>
+          </li>
+          <li>
+            <a href="./Jadwal.html" class="nav-link">
+              Jadwal
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a href="#" class="text-center nav-link" data-bs-toggle="modal" data-bs-target="#keluar">
+              Keluar
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Sidebar End -->
+    </div>
+
+    <div class="page-body p-3">
+      <div class="mb-3 card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">Tabel Waktu Praktikum</h5>
+            <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#input-dataLab">
+              Input Waktu Praktikum
+            </button>
+
+          </div>
+
+          <hr>
+          <p class="card-text">Masukkan Ruangan Lab yang tersedia</p>
+          <table class="table table-striped table-hover">
+            <thead align="middle">
+              <tr>
+                <th>No</th>
+                <th>Waktu</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody align="middle">
+              <!-- row -->
+              <tr>
+                <th>1</th>
+                <td>00:00:00 - 00:00:00</td>
+                <td>
+                  <button class="btn btn-outline-danger">
+                    Hapus
+                  </button>
+                </td>
+              </tr>
+              <!-- row end -->
+
+              <!-- row -->
+              <tr>
+                <th>1</th>
+                <td>00:00:00 - 00:00:00</td>
+                <td>
+                  <button class="btn btn-outline-danger">
+                    Hapus
+                  </button>
+                </td>
+              </tr>
+              <!-- row end -->
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered mo">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Keluar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Yakin ingin keluar?
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+          <a href="./Login.html" type="button" class="btn btn-danger">Keluar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="input-dataLab" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Input Waktu Praktikum</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Masukkan Waktu Pelaksanaan Praktikum</p>
+          <form>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-floating">
+                  <input type="time" class="form-control" id="floatingInput" required="required">
+                  <label>Mulai</label>
+
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-floating">
+
+                  <input type="time" class="form-control" id="floatingInput" required="required">
+                  <label>Sampai</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-outline-success w-100">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/sidebars.js"></script>
+</body>
+
+</html>
